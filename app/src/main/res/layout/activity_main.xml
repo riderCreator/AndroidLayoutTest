@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/carpoolers"
+    android:id="@+id/lndlyout">
+
+    <TextView android:text="@string/rider_heading" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ridrHdng"
+        style="@style/lndngRdrStyle"
+        android:layout_centerVertical="true" />
+
+    <TextView android:text="@string/welcome_text" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wcTxt"
+        style="@style/lndngWcStyle"
+        android:layout_above="@id/ridrHdng"
+        android:layout_alignRight="@id/ridrHdng"
+        android:layout_alignEnd="@id/ridrHdng" />
+
+    <TextView android:text="@string/rider_lndng_description1" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ridrDsc1"
+        android:layout_below="@id/ridrHdng"
+        style="@style/lndngWcStyle"/>
+
+    <TextView android:text="@string/rider_lndng_description2" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ridrDsc2"
+        android:layout_below="@id/ridrDsc1"
+        style="@style/lndngWcStyle"/>
+
+    <TextView android:text="@string/rider_lndng_description3" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ridrDsc3"
+        android:layout_below="@id/ridrDsc2"
+        style="@style/lndngWcStyle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/forward_button"
+        android:id="@+id/lndBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@id/ridrDsc3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
